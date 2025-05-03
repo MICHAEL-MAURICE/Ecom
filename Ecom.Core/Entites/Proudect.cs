@@ -13,4 +13,5 @@ public class Proudect:BaseEntity<int>
     public decimal Price { get; set; }
     public int CategoryId { get; set; }
     public virtual Category Category { get; set; }
+    public virtual ICollection<Photo>Photos { get; set; }
 }
